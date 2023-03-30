@@ -52,12 +52,9 @@ export const App = () => {
 	
 
 	return (
-<main>	
-      		
+<main>			
 			  {
-			
 				  <>
-			
 					  <h1>WikiVerse</h1>
 					  {
 						  addArticle ? 
@@ -67,15 +64,11 @@ export const App = () => {
 							  <PagesList pages={pages} fetchArticle={fetchArticle}/>
 							  <button onClick={setAddArticle}>Add a Page</button>
 							  <input onChange={(event) => setSlug(event.target.value)} value={slug}type="text" ></input><button onClick={fetchArticle}>Search</button>
-							  
 						  </>
 					  }
 					  	  <Article page={article}/>
-				
-			
 				<button onClick={deleteArticle}>Delete</button>
 		  <button onClick={removeSelectedArticle}>Back to list</button>
-			
 				  </>
 			  }
 		  </main>
