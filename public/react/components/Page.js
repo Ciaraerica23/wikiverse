@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Page = ({pages}) => {
+export const Page = (props) => {
 
   return <>
-    <h3>{pages.title}</h3>
+    <h3>{props.page.title}</h3>
   </>
 } 
 	
